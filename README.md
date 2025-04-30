@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🛋️ Home Decor – Modern Furniture Web App
 
-## Getting Started
+Welcome to **Home Decor**, a responsive and visually aesthetic e-commerce furniture web application built with **Next.js**, **Tailwind CSS**, and **Firebase Authentication**.
 
-First, run the development server:
+This project features a modern UI, mobile-friendly navigation, user authentication, dynamic product details, and is deployed live via **Vercel**.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Live Demo
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+🌐 (https://home-decor-eosin.vercel.app/)) &nbsp;
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🧩 Features
 
-## Learn More
+### ✅ Core Functionality
+- 🏠 Home, About, Products, Contact Us pages
+- 📱 Mobile-first responsive design with Tailwind
+- 🧭 Sticky Navbar with mobile hamburger sidebar
+- 🧑‍💼 Firebase Authentication (Email/Password)
+- 🛒 Dynamic Product Details Page using Context API
+- 📍 Contact page with map, address, WhatsApp & call buttons
+- 💬 Customer testimonial slider using Swiper.js
+- 💡 Clean reusable layout with consistent theming
+- 💚 Footer with social links and company info
 
-To learn more about Next.js, take a look at the following resources:
+### ✨ UI Components
+- Product cards with:
+  - Image
+  - Price
+  - Availability
+  - Ratings
+- Sidebar Filters (by category, product, material, availability)
+- Login and Signup with session-based navbar updates
+- Swiper carousel for reviews
+- Buttons: "Shop Now", "Get Discount", "View More", "Explore Now"
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🔧 Tech Stack
 
-## Deploy on Vercel
+| Tool / Library | Description |
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+| [Next.js](https://nextjs.org) | React Framework for fullstack web apps |
+| [Tailwind CSS](https://tailwindcss.com) | Utility-first CSS framework |
+| [Firebase](https://firebase.google.com/products/auth) | Authentication (Email/Password) |
+| [Swiper.js](https://swiperjs.com/react) | Touch slider for testimonials |
+| [Remix Icon](https://remixicon.com/) | Icon pack for UI elements |
+| [Vercel](https://vercel.com/) | Hosting and deployment |
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
