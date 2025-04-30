@@ -60,7 +60,7 @@ const Home = () => {
 
       {/* section-2 */}
 
-      <div className='p-5 w-[1285px] h-[294px] flex justify-center items-center mx-auto grid md:grid-cols-4 bg-white'>
+      <div className='p-5 w-[1285px] h-[294px] flex justify-center items-center mx-auto grid md:grid-cols-4 grid-cols-2 bg-white'>
         <div className="flex flex-col justify-center items-center gap-3">
           <h1 className="text-[#51828D] text-[30px] font-bold text-center]">Best Selling <br /> <span className='text-black mt-1 text-center'>Products</span></h1>
           <p className="text-gray-900 text-[12px] font-bold px-17 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laboriosam aliquid, sit soluta officia tempore </p>
