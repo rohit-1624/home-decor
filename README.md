@@ -5,7 +5,7 @@ Welcome to **Home Decor**, a responsive and visually aesthetic e-commerce furnit
 This project features a modern UI, mobile-friendly navigation, user authentication, dynamic product details, and is deployed live via **Vercel**.
 
 Next.js version  - Completed, &nbsp;
-Html/CSS version - Upcoming
+Html/CSS version - Pending 
 
 
 ## 🚀 Live Demo
