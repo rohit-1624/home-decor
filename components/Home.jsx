@@ -103,7 +103,7 @@ const Home = () => {
       </div>
 
       {/* Room Types */}
-      <section className="py-16 px-6 text-center bg-white">
+      <section className="py-16 px-6 text-center mt-2 bg-white">
         <h2 className="text-3xl font-semibold mb-4">Your Dream Space, <span className='text-[#51828D]'>Just a Click Away</span></h2>
         <p className="text-gray-600 max-w-xl mx-auto">
           Lorem ipsum dolor sit amet consectetur. Eu et urna at egestas egestas. Auctor adipiscing egestas eget rhoncus nunc.
