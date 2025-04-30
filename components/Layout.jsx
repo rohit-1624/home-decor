@@ -4,10 +4,12 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { useAuth } from '@/Context/AuthContext'
 import { useRouter } from 'next/navigation'
+import { useState } from 'react'
 
 const Layout = ({ children }) => {
   const { user, logout } = useAuth()
   const router = useRouter()
+  const [menuOpen, setMenuOpen] = useState(false)
 
   const handleLogout = async () => {
     await logout()
@@ -23,7 +25,6 @@ const Layout = ({ children }) => {
 
   return (
     <div>
-      {/* Hero background image */}
       <div className="relative w-full h-full overflow-hidden">
         <Image
           src="/images/hero-bg.png"
@@ -36,24 +37,29 @@ const Layout = ({ children }) => {
 
         {/* Navbar */}
         <div className="relative">
-          <nav className="fixed top-0 left-0 py-6 px-6 md:px-24 z-10 w-full h-[77px] flex justify-between items-center bg-white bg-opacity-90 backdrop-blur-md shadow-sm">
-            <h1 className="text-[#51828D] text-3xl font-semibold">Home Decor</h1>
+          <nav className="fixed top-0 left-0 right-0 py-4 px-4 md:px-24 z-10 w-full h-[77px] flex justify-between items-center bg-white bg-opacity-90 backdrop-blur-md shadow-sm">
+            <h1 className="text-[#51828D] text-2xl md:text-3xl font-semibold">Home Decor</h1>
 
-            <div className="flex items-center gap-10 text-sm font-medium">
-              {/* Navigation Menu */}
+            {/* Mobile Hamburger */}
+            <div className="md:hidden">
+              <button onClick={() => setMenuOpen(!menuOpen)}>
+                <i className="ri-menu-line text-2xl text-[#51828D]"></i>
+              </button>
+            </div>
+
+            {/* Desktop Menu */}
+            <div className="hidden md:flex items-center gap-10 text-sm font-medium">
               {menus.map((item, i) => (
                 <Link key={i} href={item.link} className="text-[#588791] hover:underline">
                   {item.label}
                 </Link>
               ))}
 
-              {/* Auth Area */}
               {user ? (
                 <div className="flex items-center gap-4 ml-4">
                   <Link href="/wishlist">
                     <i className="ri-heart-line text-xl text-[#51828D] hover:text-[#3d6f7b]"></i>
                   </Link>
-
                   <Link href="/cart">
                     <i className="ri-shopping-cart-2-line text-xl text-[#51828D] hover:text-[#3d6f7b]"></i>
                   </Link>
@@ -72,6 +78,35 @@ const Layout = ({ children }) => {
               )}
             </div>
           </nav>
+
+          {/* Mobile Sidebar */}
+          {menuOpen && (
+            <div className="fixed top-[77px] left-0 w-full bg-white shadow-md z-20 p-4 md:hidden">
+              <div className="flex flex-col gap-4 text-[#588791] font-medium">
+                {menus.map((item, i) => (
+                  <Link key={i} href={item.link} onClick={() => setMenuOpen(false)}>
+                    {item.label}
+                  </Link>
+                ))}
+                {user ? (
+                  <>
+                    <Link href="/wishlist">
+                      <i className="ri-heart-line text-xl"></i> Wishlist
+                    </Link>
+                    <Link href="/cart">
+                      <i className="ri-shopping-cart-2-line text-xl"></i> Cart
+                    </Link>
+                    <button onClick={handleLogout} className="text-red-500">Logout</button>
+                  </>
+                ) : (
+                  <>
+                    <Link href="/login">Login</Link>
+                    <Link href="/signup">Signup</Link>
+                  </>
+                )}
+              </div>
+            </div>
+          )}
 
           {/* Page Content */}
           <div className="pt-[77px]">{children}</div>
