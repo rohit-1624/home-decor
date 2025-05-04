@@ -91,8 +91,8 @@ const Home = () => {
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8">
           <div className="flex flex-col gap-6">
             <div className="text-left">
-              <h2 className="text-xl font-semibold">Chairs</h2>
-              <p className="text-gray-600 mt-2 text-sm">Comfort meets style with our handcrafted accent chairs.</p>
+              <h2 className="text-xl font-semibold">Beds</h2>
+              <p className="text-gray-600 mt-2 text-sm">Comfort meets style with our handcrafted accent beds.</p>
               <button className="mt-2 text-blue-600 font-medium hover:underline">View More</button>
             </div>
             <Image
@@ -111,8 +111,8 @@ const Home = () => {
           </div>
           <div>
             <div className="text-left">
-              <h2 className="text-xl font-semibold">Sofas</h2>
-              <p className="text-gray-600 mt-2 text-sm">From sleek modern styles to plush classics, find your perfect sofa.</p>
+              <h2 className="text-xl font-semibold">Chair</h2>
+              <p className="text-gray-600 mt-2 text-sm">From sleek modern styles to plush classics, find your perfect sofa-styled chair.</p>
               <button className="mt-2 text-blue-600 font-medium hover:underline">View More</button>
             </div>
             <Image
