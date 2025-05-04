@@ -4,19 +4,92 @@ import Link from 'next/link'
 import { useProductContext } from '@/Context/ProductContext'
 
 const products = [
-  { path: "/images/412670393_fbcb5734-2019-4045-9a34-6c17c4a3741e1.png", name: 'Product Name', type: 'Product Type', price: 'Price', inStock: true },
-  { path: "/images/409090715_0a83e7fa-4172-436b-b814-ed4abefff2391.png", name: 'Product Name', type: 'Product Type', price: 'Price', inStock: false },
-  { path: "/images/midcentury-modern-walnut-wood-cabinet-with-books-decor1.png", name: 'Product Name', type: 'Product Type', price: 'Price', inStock: false },
-  { path: "/images/412670393_fbcb5734-2019-4045-9a34-6c17c4a3741e1.png", name: 'Product Name', type: 'Product Type', price: 'Price', inStock: true },
-  { path: "/images/grey-comfortable-armchair-isolated-white-background-removebg-preview.png", name: 'Product Name', type: 'Product Type', price: 'Price', inStock: false },
-  { path: "/images/product.png", name: 'Product Name', type: 'Product Type', price: 'Price', inStock: false },
-  { path: "/images/midcentury-modern-walnut-wood-cabinet-with-books-decor1.png", name: 'Product Name', type: 'Product Type', price: 'Price', inStock: true },
-  { path: "/images/product.png", name: 'Product Name', type: 'Product Type', price: 'Price', inStock: false },
-  { path: "/images/409090715_0a83e7fa-4172-436b-b814-ed4abefff2391.png", name: 'Product Name', type: 'Product Type', price: 'Price', inStock: false },
-  { path: "/images/product.png", name: 'Product Name', type: 'Product Type', price: 'Price', inStock: true },
-  { path: "/images/grey-comfortable-armchair-isolated-white-background-removebg-preview.png", name: 'Product Name', type: 'Product Type', price: 'Price', inStock: false },
-  { path: "/images/midcentury-modern-walnut-wood-cabinet-with-books-decor1.png", name: 'Product Name', type: 'Product Type', price: 'Price', inStock: false },
+  {
+    path: "/images/412670393_fbcb5734-2019-4045-9a34-6c17c4a3741e1.png",
+    name: 'Artemis Luxe Sofa',
+    type: 'Elegant 3-Seater Sofa',
+    price: '₹19,999',
+    inStock: true
+  },
+  {
+    path: "/images/409090715_0a83e7fa-4172-436b-b814-ed4abefff2391.png",
+    name: 'Nova Cushioned Chair',
+    type: 'Padded Wooden Chair',
+    price: '₹3,499',
+    inStock: false
+  },
+  {
+    path: "/images/midcentury-modern-walnut-wood-cabinet-with-books-decor1.png",
+    name: 'Zephyr Coffee Table',
+    type: 'Modern Center Table',
+    price: '₹7,499',
+    inStock: false
+  },
+  {
+    path: "/images/412670393_fbcb5734-2019-4045-9a34-6c17c4a3741e1.png",
+    name: 'Aurora Velvet Sofa',
+    type: 'Luxury Fabric Sofa',
+    price: '₹22,499',
+    inStock: true
+  },
+  {
+    path: "/images/grey-comfortable-armchair-isolated-white-background-removebg-preview.png",
+    name: 'Luna Comfort Chair',
+    type: 'Cushioned Lounge Chair',
+    price: '₹4,799',
+    inStock: false
+  },
+  {
+    path: "/images/product.png",
+    name: 'Elysian Armchair',
+    type: 'Stylish Padded Chair',
+    price: '₹3,999',
+    inStock: false
+  },
+  {
+    path: "/images/midcentury-modern-walnut-wood-cabinet-with-books-decor1.png",
+    name: 'Cadenza Table',
+    type: 'Sleek Wooden Table',
+    price: '₹6,299',
+    inStock: true
+  },
+  {
+    path: "/images/product.png",
+    name: 'Haven Rest Chair',
+    type: 'Relaxing Cushioned Chair',
+    price: '₹3,799',
+    inStock: false
+  },
+  {
+    path: "/images/409090715_0a83e7fa-4172-436b-b814-ed4abefff2391.png",
+    name: 'Bora Mesh Chair',
+    type: 'Breathable Padded Chair',
+    price: '₹3,199',
+    inStock: false
+  },
+  {
+    path: "/images/product.png",
+    name: 'Raya Padded Chair',
+    type: 'Cozy Comfort Chair',
+    price: '₹4,199',
+    inStock: true
+  },
+  {
+    path: "/images/grey-comfortable-armchair-isolated-white-background-removebg-preview.png",
+    name: 'Mira Lounge Chair',
+    type: 'Soft Gadda Chair',
+    price: '₹3,699',
+    inStock: false
+  },
+  {
+    path: "/images/midcentury-modern-walnut-wood-cabinet-with-books-decor1.png",
+    name: 'Orion Craft Table',
+    type: 'Solid Teak Table',
+    price: '₹6,999',
+    inStock: false
+  },
 ]
+
 
 export default function ProductPage() {
   const { setSelectedProduct } = useProductContext()
