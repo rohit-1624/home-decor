@@ -31,12 +31,6 @@ const ShopProducts = () => {
         <p className="text-gray-600 mb-4">{selectedProduct.type}</p>
         <p className="text-2xl font-semibold text-[#51828D] mb-4">{selectedProduct.price}</p>
 
-        {/* Color Picker Placeholder */}
-        <div className="mb-4">
-          <p className="font-semibold mb-1">Colors</p>
-          <div className="flex gap-2">[Color Swatches Here]</div>
-        </div>
-
         {/* Action Buttons */}
         <div className="flex gap-4 mb-6">
           <button className="px-6 py-2 bg-[#8CA8AF] text-black font-medium rounded-md">Add to Cart</button>
@@ -47,7 +41,8 @@ const ShopProducts = () => {
         <div className="mb-6">
           <h2 className="text-xl font-bold mb-2">Description</h2>
           <p className="text-gray-700">
-            Lorem ipsum dolor sit amet consectetur. Volutpat id etiam feugiat sed augue et volutpat massa ornare...
+            Experience the perfect blend of elegance and comfort with this handcrafted piece. Made from premium materials,
+            it offers both timeless style and everyday functionality — ideal for relaxing evenings or hosting guests in style.
           </p>
         </div>
 
