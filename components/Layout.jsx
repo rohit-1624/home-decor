@@ -118,9 +118,10 @@ const Layout = ({ children }) => {
         <div className="w-10/12 mx-auto grid md:grid-cols-2 gap-16">
           <div className="pr-8">
             <h1 className="text-[#51828D] font-semibold text-3xl mb-3">Home Decor</h1>
-            <p className="text-gray-900 mb-6 text-left">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit nulla numquam illo fugiat tenetur earum itaque at sit magni.
-            </p>
+           <p className="text-gray-900 mb-6 text-left">
+               Bringing timeless elegance to modern homes with curated pieces crafted for comfort, beauty, and durability.
+           </p>
+
             <div className="flex text-[30px] text-[#51828D]">
               <ul className="flex gap-6">
                 <li><i className="ri-facebook-circle-fill"></i></li>
