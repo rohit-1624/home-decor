@@ -13,7 +13,7 @@
       </button>
     </div>
 
-    {/* Product Cards */}
+    {/* Product - Cards */}
     {[
       { src: "/images/product.png", title: "Chair", price: "₹3,999" },
       { src: "/images/412670393_fbcb5734-2019-4045-9a34-6c17c4a3741e1.png", title: "Sofa", price: "₹1,299" },
